@@ -6,7 +6,7 @@ import java.util.*;
 import java.io.*;
 
 public class RSA {
-	public static int mul(int x,int y, int n) {
+	public static int mul(int x, int y, int n) {
 		int k = 1,j;
 
 		for(j = 1; j <= y; j++)
@@ -52,5 +52,5 @@ public class RSA {
 // | Enter the message to encrypt: ssce |
 // |                                    |
 // | Cypher text is: 929266173          |
-// | Decyrpted text is: ssce%           |
+// | Decyrpted text is: ssce            |
 // |------------------------------------|

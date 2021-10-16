@@ -1,5 +1,5 @@
 // |----------------------------------------------------------------------|
-// | Write a program for congention control using leaky bucket algorithm. |
+// | Write a program for congestion control using leaky bucket algorithm. |
 // |----------------------------------------------------------------------|
 
 import java.util.*;
