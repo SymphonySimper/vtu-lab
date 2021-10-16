@@ -1,5 +1,5 @@
 // |----------------------------------------------------------------------|
-// | Write a program the congention control using leaky bucket algorithm. |
+// | Write a program for congention control using leaky bucket algorithm. |
 // |----------------------------------------------------------------------|
 
 import java.util.*;
@@ -36,12 +36,12 @@ public class Bucket {
 	}
 }
 
-//  |------------------------------|
-//  | Sample Output                |
-//  |------------------------------|
-//  | Enter the output rate: 50    |
-//	| Enter the no. of packets: 2  |
-//	| packet no. 0 packet size 14  |
-//	| packet no. 1 packet size 686 |
-//	| Bucket overflow!             |
-//	|------------------------------|
+// |------------------------------|
+// | Sample Output                |
+// |------------------------------|
+// | Enter the output rate: 50    |
+// | Enter the no. of packets: 2  |
+// | packet no. 0 packet size 14  |
+// | packet no. 1 packet size 686 |
+// | Bucket overflow!             |
+// |------------------------------|
