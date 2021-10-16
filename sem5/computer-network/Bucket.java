@@ -1,3 +1,5 @@
+// Write a program the congention control using leaky bucket algorithm.
+
 import java.util.*;
 
 public class Bucket {
