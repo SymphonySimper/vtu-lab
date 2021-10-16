@@ -1,4 +1,6 @@
-// Write a program the congention control using leaky bucket algorithm.
+// |----------------------------------------------------------------------|
+// | Write a program the congention control using leaky bucket algorithm. |
+// |----------------------------------------------------------------------|
 
 import java.util.*;
 
@@ -21,9 +23,9 @@ public class Bucket {
 		Scanner r = new Scanner(System.in);
 		Random rand = new Random();
 
-		System.out.print("\nEnter the output rate: ");
+		System.out.print("Enter the output rate: ");
 		output = r.nextInt();
-		System.out.print("\nEnter the no. of packets: ");
+		System.out.print("Enter the no. of packets: ");
 		n = r.nextInt();
 
 		for(int i = 0; i < n; i++) {
@@ -33,3 +35,13 @@ public class Bucket {
 		}
 	}
 }
+
+//  |------------------------------|
+//  | Sample Output                |
+//  |------------------------------|
+//  | Enter the output rate: 50    |
+//	| Enter the no. of packets: 2  |
+//	| packet no. 0 packet size 14  |
+//	| packet no. 1 packet size 686 |
+//	| Bucket overflow!             |
+//	|------------------------------|

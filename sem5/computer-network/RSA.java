@@ -1,4 +1,6 @@
-// Write a program for simple RSA algorithm to encrypt and decrypt data.
+// |-----------------------------------------------------------------------|
+// | Write a program for simple RSA algorithm to encrypt and decrypt data. |
+// |-----------------------------------------------------------------------|
 
 import java.util.*;
 import java.io.*;
@@ -21,7 +23,7 @@ public class RSA {
 
 		Scanner r = new Scanner(System.in);
 
-		System.out.print("\nEnter the message to encrypt: ");
+		System.out.print("Enter the message to encrypt: ");
 		msg = r.next();
 
 		for(i = 0; i < msg.length(); i++)
@@ -43,3 +45,12 @@ public class RSA {
 			System.out.print((char) pt[i]);
 	}
 }
+
+// |------------------------------------|
+// | Sample output                      |
+// |------------------------------------|
+// | Enter the message to encrypt: ssce |
+// |                                    |
+// | Cypher text is: 929266173          |
+// | Decyrpted text is: ssce%           |
+// |------------------------------------|
