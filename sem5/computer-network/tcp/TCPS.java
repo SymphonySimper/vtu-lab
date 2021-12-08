@@ -22,7 +22,7 @@ public class TCPS {
 		String str;
 		while((str = contentRead.readLine()) != null)
 			pwrite.println(str);
-System.out.println("Connection is successful");
+		System.out.println("Connection is successful");
 
 		sock.close();
 		sersock.close();
