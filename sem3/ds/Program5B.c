@@ -1,7 +1,6 @@
-/*
-5. Design, Develop and Implement a Program in C for the following Stack Applications1
-b. Solving Tower of Hanoi problem with n disks
-*/
+// 5. Design, Develop and Implement a Program in C for the following Stack Applications1
+// b. Solving Tower of Hanoi problem with n disks
+
 #include <stdio.h>
 #include <math.h>
 void tower(int n, int source, int temp, int destination);
