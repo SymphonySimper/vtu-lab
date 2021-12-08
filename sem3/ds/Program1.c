@@ -1,11 +1,10 @@
-/*
-1. Design, Develop and Implement a menu driven Program in C for the following Array operations
-a. Creating an Array of N Integer Elements
-b. Display of Array Elements with Suitable Headings
-c. Inserting an Element (ELEM) at a given valid Position (POS)
-d. Deleting an Element at a given valid Position(POS)
-e. Exit.
-*/
+// 1. Design, Develop and Implement a menu driven Program in C for the following Array operations
+// a. Creating an Array of N Integer Elements
+// b. Display of Array Elements with Suitable Headings
+// c. Inserting an Element (ELEM) at a given valid Position (POS)
+// d. Deleting an Element at a given valid Position(POS)
+// e. Exit.
+
 
 #include <stdio.h>
 
@@ -80,10 +79,11 @@ void menu()
 {
 	while (1)
 	{
-		/* We pass in 1 to while loop to make it an infintie loop 
-	  You can also use a for loop this, you can accomplish it by using
-	for(;;)  
-       	*/
+
+		// We pass in 1 to while loop to make it an infintie loop
+		// You can also use a for loop this, you can accomplish it by using
+		// for(;;)
+
 		printf("\nMENU:\n");
 		printf("\n1.Create an array with n elements.");
 		printf("\n2.Dispaly elements in the array.");

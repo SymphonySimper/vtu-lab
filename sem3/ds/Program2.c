@@ -1,22 +1,20 @@
-/*
-2. Design, Develop and Implement a Program in C for the following operations on Strings
-a. Read a main String (STR), a Pattern String (PAT) and a Replace String (REP)
-b. Perform Pattern Matching Operation: Find and Replace all occurrences of PAT in STR with REP if PAT exists in STR.
-Report suitable messages in case PAT does not exist in STR.Support the program with functions for each of the above operations.
-Don't use Built-in functions.
-*/
+// 2. Design, Develop and Implement a Program in C for the following operations on Strings
+// a. Read a main String (STR), a Pattern String (PAT) and a Replace String (REP)
+// b. Perform Pattern Matching Operation: Find and Replace all occurrences of PAT in STR with REP if PAT exists in STR.
+// Report suitable messages in case PAT does not exist in STR.Support the program with functions for each of the above operations.
+// Don't use Built-in functions.
 
 #include <stdio.h>
 #define MAX 100
 
 char str[MAX], pat[MAX], rep[MAX], ans[MAX];
 int i, j, c, m, k, patternExist = 0;
-/*
-c and m are index for main string
-i is index for pattern string
-j is inedx for ans string
-k is index for rep string
-*/
+
+// c and m are index for main string
+// i is index for pattern string
+// j is inedx for ans string
+// k is index for rep string
+
 void input(char *string, int length)
 {
 	fgets(string, length, stdin);
