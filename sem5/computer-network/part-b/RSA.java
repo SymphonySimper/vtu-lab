@@ -3,7 +3,6 @@
 // |-----------------------------------------------------------------------|
 
 import java.util.*;
-// import java.io.*;
 
 public class RSA {
 	public static int mul(int x, int y, int n) {
