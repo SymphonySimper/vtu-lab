@@ -38,7 +38,7 @@ public class RSA {
 		}
 
 		System.out.print("\nDecyrpted text is: ");
-		for(i = 0; i < msg.length(); i++) {
+		for(i = 0; i < ml; i++) {
 			pt[i] = mul(ct[i], d, n);
 			System.out.print((char) pt[i]);
 		}
