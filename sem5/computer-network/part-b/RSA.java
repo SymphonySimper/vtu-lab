@@ -3,7 +3,7 @@
 // |-----------------------------------------------------------------------|
 
 import java.util.*;
-import java.io.*;
+// import java.io.*;
 
 public class RSA {
 	public static int mul(int x, int y, int n) {
@@ -26,23 +26,23 @@ public class RSA {
 		System.out.print("Enter the message to encrypt: ");
 		msg = r.next();
 
-		for(i = 0; i < msg.length(); i++)
+		int ml = msg.length();
+		for(i = 0; i < ml; i++)
 			pt[i] = msg.charAt(i);
 
 		n = 253; e = 13; d = 17;
-		System.out.print("\nCypher text is: ");
 
-		for(i = 0; i < msg.length(); i++)
+		System.out.print("\nCypher text is: ");
+		for(i = 0; i < ml; i++) {
 			ct[i] = mul(pt[i], e, n);
-		for(i = 0; i < msg.length(); i++)
 			System.out.print(ct[i]);
+		}
 
 		System.out.print("\nDecyrpted text is: ");
-
-		for(i = 0; i < msg.length(); i++)
+		for(i = 0; i < msg.length(); i++) {
 			pt[i] = mul(ct[i], d, n);
-		for(i = 0; i < msg.length(); i++)
 			System.out.print((char) pt[i]);
+		}
 	}
 }
 
