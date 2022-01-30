@@ -12,7 +12,7 @@ public class Bucket {
 		} else {
 			while(psize > output) {
 				System.out.println(output + " bytes outputted");
-				psize = psize - output;
+				psize -= output;
 			}
 		}
 	}
