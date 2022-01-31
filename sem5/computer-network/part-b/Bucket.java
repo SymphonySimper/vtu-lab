@@ -5,35 +5,40 @@
 import java.util.*;
 
 public class Bucket {
-	static void solution(int psize, int output) {
-		int bsize = 512;
-		if (psize > bsize) {
-			System.out.println("Bucket overflow!");
-		} else {
-			while(psize > output) {
-				System.out.println(output + " bytes outputted");
-				psize -= output;
-			}
-		}
-	}
+  static void solution(int psize, int output) {
+    int bsize = 512;
+    if (psize > bsize) {
+      System.out.println("Bucket overflow!");
+    } else {
+      while (true) {
+        if (psize > output) {
+          System.out.println(output + " bytes outputted");
+          psize -= output;
+        } else {
+          System.out.println(psize + " bytes outputted");
+          break;
+        }
+      }
+    }
+  }
 
-	public static void main(String[] args) {
-		int output, psize, n;
+  public static void main(String[] args) {
+    int output, psize, n;
 
-		Scanner r = new Scanner(System.in);
-		Random rand = new Random();
+    Scanner r = new Scanner(System.in);
+    Random rand = new Random();
 
-		System.out.print("Enter the output rate: ");
-		output = r.nextInt();
-		System.out.print("Enter the no. of packets: ");
-		n = r.nextInt();
+    System.out.print("Enter the output rate: ");
+    output = r.nextInt();
+    System.out.print("Enter the no. of packets: ");
+    n = r.nextInt();
 
-		for(int i = 0; i < n; i++) {
-			psize = rand.nextInt(1000);
-			System.out.println("packet no. " + i + " packet size " + psize);
-			solution(psize, output);
-		}
-	}
+    for (int i = 0; i < n; i++) {
+      psize = rand.nextInt(1000);
+      System.out.println("packet no. " + i + " packet size " + psize);
+      solution(psize, output);
+    }
+  }
 }
 
 // |------------------------------|
