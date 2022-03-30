@@ -7,7 +7,7 @@ import java.net.*;
 import java.io.*;
 
 public class TCPS {
-	public static void main(String args[]) throws IOException {
+	public static void main(String args[]) throws Exception {
 		ServerSocket sersock = new ServerSocket(5000);
 		System.out.println("Server ready for connection");
 		Socket sock = sersock.accept();

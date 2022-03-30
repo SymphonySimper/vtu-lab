@@ -7,7 +7,7 @@ import java.net.*;
 import java.io.*;
 
 public class TCPC {
-	public static void main(String args[]) throws IOException {
+	public static void main(String args[]) throws Exception {
 		Socket sock = new Socket("127.0.0.1", 5000);
 		System.out.print("Enter the file name: ");
 		BufferedReader keyRead = new BufferedReader(new InputStreamReader(System.in));
