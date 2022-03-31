@@ -8,7 +8,7 @@ import java.net.*;
 
 public class UDPS {
 	public static void main(String[] args) throws Exception {
-		DatagramSocket skt = skt = new DatagramSocket(6789);
+		DatagramSocket skt = new DatagramSocket(6789);
 		byte[] buffer = new byte[1000];
 
 		while (true) {
