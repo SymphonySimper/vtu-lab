@@ -1,0 +1,54 @@
+<html>
+  <script>
+    function sv(v) {
+      document.getElementById('output').value = v
+    }
+    function call(id) {
+      let n1 = parseFloat(document.getElementById('ip1').value)
+      let n2 = parseFloat(document.getElementById('ip2').value)
+
+      if (isNaN(n1) || isNaN(n2)) alert('enter a valid number')
+      else {
+        switch (id) {
+          case 'add':
+            sv(n1 + n2)
+            break
+          case 'sub':
+            sv(n1 - n2)
+            break
+          case 'mul':
+            sv(n1 * n2)
+            break
+          case 'div':
+            sv(n1 / n2)
+            break
+        }
+      }
+    }
+  </script>
+
+  <body>
+    <h1>Simple Calculator</h1>
+    <table>
+      <tr>
+        <td>
+          <form action="get">
+            <div width="50%" align="center">
+              <label>Op1 <input type="text" id="ip1" /></label>
+              <label>Op2 <input type="text" id="ip2" /></label>
+              <label>Output <input type="text" id="output" /></label>
+            </div>
+            <br />
+            <div width="50%" align="center">
+              <input type="button" value="+" id="add" onclick="call(this.id)" />
+              <input type="button" value="-" id="sub" onclick="call(this.id)" />
+              <input type="button" value="*" id="mul" onclick="call(this.id)" />
+              <input type="button" value="/" id="div" onclick="call(this.id)" />
+              <input type="reset" value="clear" />
+            </div>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
