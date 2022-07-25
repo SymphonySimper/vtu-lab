@@ -1,5 +1,4 @@
 #include <GL/glut.h>
-#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -22,10 +21,10 @@ void display() {
 
 void reshape(int w, int h) {
   glViewport(0, 0, w, h);
-  glMatrixMode(GL_PROJECTION);
+  // glMatrixMode(GL_PROJECTION);
   glLoadIdentity();
-  glOrtho(-2, 2, -2, 2, -10, 10);
-  glMatrixMode(GL_MODELVIEW);
+  // glOrtho(-2, 2, -2, 2, -10, 10);
+  // glMatrixMode(GL_MODELVIEW);
 }
 
 int main(int argc, char **argv) {
